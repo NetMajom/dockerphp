@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/php_test",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "NetMajom",
+      "email": "feher.robert@gmail.com"
+    }
+  ],
+  "require": {
+    "twig/twig": "1.6.5"
+  }
+}

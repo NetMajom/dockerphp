@@ -58,4 +58,8 @@ You can set the composer settings too
 
 ![](images/screen_6.png)
 
+## Useful Commands
+
+* `docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)` => To check the ip address _(You can use the mysql ip address what you get to connect to it from PHP)_
+
 ### That's it, so you can go, and make some fun :)

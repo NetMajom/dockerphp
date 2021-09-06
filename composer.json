@@ -9,6 +9,6 @@
     }
   ],
   "require": {
-    "twig/twig": "1.6.5"
+    "ext-pdo": "*"
   }
 }

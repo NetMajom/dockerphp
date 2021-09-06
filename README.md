@@ -44,7 +44,7 @@ You can set the composer settings too
 
 ## Test the app
 
-* Install the sample composer file with right mouse burron -> composer install
+Install the sample composer file with right mouse burron -> composer install
 
 ![](images/screen_4.png)
 
@@ -54,12 +54,14 @@ You can set the composer settings too
 
 ![](images/screen_5.png)
 
-* Check your browser the main.php file go to: `http://localhost/main.php`
+Check your browser the main.php file go to: `http://localhost/main.php`
 
 ![](images/screen_6.png)
 
 ## Useful Commands
 
 * `docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)` => To check the ip address _(You can use the mysql ip address what you get to connect to it from PHP)_
+
+* Copy php.ini from container `docker cp <containername>:usr/local/etc/php/php.ini-production php.ini`
 
 ### That's it, so you can go, and make some fun :)

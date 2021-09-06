@@ -1,11 +1,13 @@
 # Author: Robert Feher - NetMajom Corp. - feher.robert@gmail.com
 
-version: '3.3'
+version: '3.8'
 
 services:
   ### PHP - Apache - Xdebug ###################################################
   webserver:
-    image: phpstorm/php-73-apache-xdebug-27
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "80:80"
     volumes:
@@ -25,6 +27,7 @@ services:
       - MYSQL_ROOT_PASSWORD=admin
       - MYSQL_PASSWORD=admin
       - MYSQL_DATABASE=dbname
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
     volumes:
       - ./data:/var/lib/mysql
   ### PHPMyAdmin ###############################################
